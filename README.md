@@ -1,4 +1,4 @@
-# Executive Summary
+## Executive Summary
 ## Use Case
 ## Application Architecture
 ## Key Value Propositions
@@ -16,21 +16,21 @@
   - Add/Update/Delete products
   - Table: Product
   
-## Search Service: To enable simple search of product catalog from edge as well as hub, examples of search are:
+### Search Service: To enable simple search of product catalog from edge as well as hub, examples of search are:
   - Search product by name
   - Search inventory infor for a given product and store number
   
-## Inventory Service: To enable inventory management at edges
+### Inventory Service: To enable inventory management at edges
   - Search on-hand inventory for a given product and location: By prod / store location
   - Demand generation service to refill inventory
   - Table: Inventory
 
-## Shopping Service/POS:
+### Shopping Service/POS:
   - Browse product catalog
   - Execute transactions / orders  
   - Curb side pickup --> stretch goal
   - Table: Orders
 
-## Real Time Order Dashboard on Hub
+### Real Time Order Dashboard on Hub
   - Dashboard to display incoming orders in real time
  
