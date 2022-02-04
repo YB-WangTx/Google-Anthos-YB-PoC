@@ -9,6 +9,8 @@
 
 ## Application Architecture
 
+
+
 ## Key Value Propositions
  - Deploying YugabyteDB Anywhere: Hybrid cloud and edge deployment on kubernetes managed by Google Anthos
  - Tight integration with google cloud native managed services
