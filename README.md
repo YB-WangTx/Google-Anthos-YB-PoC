@@ -1,6 +1,14 @@
 ## Executive Summary
+
 ## Use Case
+ 
+ This demo intends to showcase following key differentials of YugabyteDB anywhere:
+ - Enabling cloud native microservices
+ - YugabyteDB Anywhere: Deploying on Edge, on-prem and in the public cloud
+ - Geo-distributed applicaitons: Phase 2
+
 ## Application Architecture
+
 ## Key Value Propositions
  - Deploying YugabyteDB Anywhere: Hybrid cloud and edge deployment on kubernetes managed by Google Anthos
  - Tight integration with google cloud native managed services
