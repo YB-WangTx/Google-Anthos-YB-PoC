@@ -12,7 +12,7 @@
 
 # Microservices
 
-## Product Catalog Publishing Service: To maintain product catalog from the hub
+### Product Catalog Publishing Service: To maintain product catalog from the hub
   - Add/Update/Delete products
   - Table: Product
   
