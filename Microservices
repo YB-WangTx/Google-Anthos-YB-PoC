@@ -1,23 +1,23 @@
-### Microservices:
+# Microservices:
 
-1. Product Catalog Publishing Service: To maintain product catalog from the hub
-  -- Add/Update/Delete products
-  --Table: Product
+## 1. Product Catalog Publishing Service: To maintain product catalog from the hub
+  - Add/Update/Delete products
+  - Table: Product
   
-2. Search Service: Enable simple search of product catalog from edge as well as hub, examples of search are:
-  -- Search product by name
-  -- Search inventory infor for a given product and store number
+## 2. Search Service: Enable simple search of product catalog from edge as well as hub, examples of search are:
+  - Search product by name
+  - Search inventory infor for a given product and store number
   
-3. Inventory Service:
-  -- Search on-hand inventory for a given product and location: By prod / store location
-  -- Demand generation service
-  -- Table: Inventory
+## 3. Inventory Service:
+  - Search on-hand inventory for a given product and location: By prod / store location
+  - Demand generation service
+  - Table: Inventory
 
-4. Shopping Service/POS:
-  -- Browse product catalog
-  -- Execute transactions / orders  
-  -- Curb side pickup --> stretch goal
-  -- Table: Orders
+## 4. Shopping Service/POS:
+  - Browse product catalog
+  - Execute transactions / orders  
+  - Curb side pickup --> stretch goal
+  - Table: Orders
   
   
  Dashboard to display incoming POS data and refresh periodically
