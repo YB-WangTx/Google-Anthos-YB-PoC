@@ -1,6 +1,6 @@
 ## Executive Summary
 
-## Use Case
+## Use Cases
  
  This demo intends to showcase following key differentials of YugabyteDB anywhere:
  - Enabling cloud native microservices
@@ -18,7 +18,7 @@
    central managed database to enable downstream applications, b. Propogating changes such as product catalog from the central 
    database to store/edge databases.
 
-# Microservices
+## Microservices / Dashboard
 
 ### Product Catalog Publishing Service: Provides the list of products from table product and ability to search products and get individual products.
   - Add/Update/Delete products
@@ -39,6 +39,6 @@
   - Curb side pickup --> stretch goal
   - Table: Orders
 
-### Real Time Order Dashboard on Hub:
-  - Dashboard to display incoming orders in real time
+### Real Time Order Dashboard on Hub
+  - Dashboard to display incoming orders in real time from edges
  
