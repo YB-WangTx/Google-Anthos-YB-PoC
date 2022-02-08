@@ -45,7 +45,7 @@ CREATE TABLE retail.inventory
       sku       UUID NOT NULL,
       accountid CHAR(10) NOT NULL,
       order_details jsonb,
-      order_time TIMESTAMP,
+      order_date TIMESTAMP,
       order_total int,
       store_num int,
       store_region VARCHAR(64)
