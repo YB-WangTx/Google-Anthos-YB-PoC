@@ -22,7 +22,7 @@
 
 ## Microservices / Dashboard
 
-### Product Catalog Publishing Service: Provides the list of products from table product and ability to search products and get individual products.
+### Product Catalog Publishing Service: Provides the list of products from table product and ability to search products.
   - Add/Update/Delete products
   - Table: Product
   
