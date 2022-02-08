@@ -18,20 +18,25 @@ CREATE TABLE retail.products
    discount numeric
 );
 
+CREATE UNIQUE INDEX product_idx1 ON retail.products(title);
+
 --2. Product Inventory: Inventory Service
 Drop table if exists retail.inventory cascade;
 CREATE TABLE retail.inventory 
 (
-     sku UUID PRIMARY KEY,
+     sku UUID,
      store_num  int,
      store_region VARCHAR(64), --east, west, etc
      onhand int,
      available_to_promise int,
      allocated int,
      reserved int,   
-     virtual_hold int
+     virtual_hold int,
+     PRIMARY KEY (sku, store_num)   
 );
-  
+ 
+ CREATE INDEX inventory_idx1 ON retail.inventory(sku,store_num);
+ 
 --2. Transactions: Shopping Service / POS Service
  Drop table if exists retail.orders cascade;
  CREATE TABLE retail.orders 
@@ -43,7 +48,7 @@ CREATE TABLE retail.inventory
       order_time TIMESTAMP,
       order_total int,
       store_num int,
-      store_region VARCHAR(64) --east, west, etc
+      store_region VARCHAR(64)
 );
  
 --User
