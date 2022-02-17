@@ -1,12 +1,11 @@
-
 --YSQL
 --Schema: retail
-Create schema retail;
+Create schema if not exists retail;
 
 --Tables to support Microservices
 --1. Products: Product Catalog Publishing Microservice
 Drop table if exists retail.products cascade;
-CREATE TABLE retail.products 
+CREATE TABLE retail.products
 (
    sku UUID PRIMARY KEY,
    title VARCHAR(64),
@@ -22,7 +21,7 @@ CREATE UNIQUE INDEX product_idx1 ON retail.products(title);
 
 --2. Product Inventory: Inventory Service
 Drop table if exists retail.inventory cascade;
-CREATE TABLE retail.inventory 
+CREATE TABLE retail.inventory
 (
      sku UUID,
      store_num  int,
@@ -30,16 +29,16 @@ CREATE TABLE retail.inventory
      onhand int,
      available_to_promise int,
      allocated int,
-     reserved int,   
+     reserved int,
      virtual_hold int,
-     PRIMARY KEY (sku, store_num)   
+     PRIMARY KEY (sku, store_num)
 );
- 
+
  CREATE INDEX inventory_idx1 ON retail.inventory(sku,store_num);
- 
+
 --2. Transactions: Shopping Service / POS Service
  Drop table if exists retail.orders cascade;
- CREATE TABLE retail.orders 
+ CREATE TABLE retail.orders
  (
       order_id  UUID PRIMARY KEY,
       sku       UUID NOT NULL,
@@ -50,10 +49,10 @@ CREATE TABLE retail.inventory
       store_num int,
       store_region VARCHAR(64)
 );
- 
+
 --User
-Drop table if exists retail.users cascade;
-create table users
+Drop table if exists retail.shopusers cascade;
+create table retail.shopusers
 (
   accountid UUID PRIMARY KEY,
   username VARCHAR(64) UNIQUE NOT NULL,
@@ -62,4 +61,3 @@ create table users
   lastname VARCHAR(64) NOT NULL,
   state VARCHAR(2) NOT NULL
 );
-    	 
