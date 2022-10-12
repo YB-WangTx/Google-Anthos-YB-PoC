@@ -51,6 +51,10 @@ CREATE TABLE retail.inventory
       store_region VARCHAR(64)
 );
  
+--SAMPLE DATA
+insert into yugabyte.orders values('1001', '21000','{"order_total": 33.99, "products_purchased": {"product": "Arbonne Bronzer", "quantity": 1}}', '20221002', 5, 1);
+
+
 --User
 Drop table if exists retail.users cascade;
 create table users
